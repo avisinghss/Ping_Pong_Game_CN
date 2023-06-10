@@ -1,0 +1,113 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  background-size: contain;
+  background-color: #28cf49;
+}
+/*container of the game*/
+.container {
+  width: 100%;
+  height: 70%;
+
+  box-sizing: border-box;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  margin: 0px;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #61b8dad1;
+}
+/*Rods and ball of the game*/
+.rod1,
+.rod2 {
+  background-color: rgb(80, 112, 240);
+  width: 20%;
+  /* min-width:0px; */
+  height: 20px;
+  position: relative;
+  left: 45%;
+  border-radius: 40rem;
+  box-sizing: border-box;
+  font-size: 15px;
+  text-align: center;
+}
+.rod2 {
+  background-color: rgb(242, 76, 76);
+}
+.ball {
+  background-color: pink;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  align-self: center;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+}
+.player_1_Score {
+  height: 50px;
+  width: 50px;
+  color: rgb(193, 22, 0);
+  position: fixed;
+  left: 30vw;
+  margin-top: 30px;
+}
+
+.player_2_Score {
+  height: 50px;
+  width: 50px;
+  color: rgb(193, 22, 0);
+  position: fixed;
+  left: 70vw;
+  margin-top: 30px;
+}
+
+.message {
+  position: fixed;
+  height: 10vh;
+  width: 30vw;
+  color: #4e08be;
+  left: 38vw;
+  margin: 30px auto auto auto;
+}
+/*To hide the element*/
+.hidden {
+  visibility: hidden;
+}
+
+/* blurry*/
+/* .blurry{
+  opacity:0.3;
+} */
+/*top container for score and new game button*/
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  background-size: contain;
+  box-sizing: border-box;
+
+  align-items: baseline;
+}
+.top-container > div {
+  height: 20px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

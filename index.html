@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ping Pong Game</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!-- The body container holds the entire game content -->
+    <div id="app">
+      <!-- The top container contains the scoreboards and game message -->
+      <div class="top-container">
+        <h1 class="player_1_Score">0</h1>
+        <!-- Score display for Player 1 -->
+        <h1 class="player_2_Score">0</h1>
+        <!-- Score display for Player 2 -->
+        <h1 class="message">Press Enter to Play</h1>
+        <!-- Game message -->
+      </div>
+
+      <!-- The container holds the player rods and the ball -->
+      <div class="container">
+        <div class="rod1 rod">Rod 1</div>
+        <!-- Player 1's rod -->
+        <div class="ball">
+          <div class="ball-effect"></div>
+          <!-- The ball and its visual effect -->
+        </div>
+        <div class="rod2 rod">Rod 2</div>
+        <!-- Player 2's rod -->
+      </div>
+
+      <div class="top-container"></div>
+      <!-- Additional top container -->
+    </div>
+
+    <!-- The JavaScript file responsible for the game's logic and functionality -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
